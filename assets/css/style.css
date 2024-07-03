@@ -56,10 +56,19 @@ body {
 
 .logo {
     width: 3em;
-    margin-left: 2em;
+    margin-right: 0.5em;
     cursor: pointer;
 }
+.logo-tittle{
+    display: inline-flex;
+    align-self: center;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: black;
 
+}
 
 /*sidebar*/
 
