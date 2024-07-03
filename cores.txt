@@ -1,0 +1,4 @@
+Azul marinho: 070F2B
+Azul escuro: 1B1A55
+Azul real claro: 535C91
+Lilás: 9290C3
