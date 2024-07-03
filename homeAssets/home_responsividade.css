@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* 320px (smartphones), 768px (tablets), and 1024px (desktops) */
+@media screen and (min-width: 768px){/*tablets */
+    .logo{
+        float: left;
+    }
+
+}
+
+@media screen and (min-width: 992px){/* laptops */
+    .logo{
+        float: left;
+    }
+    .hamburger-icon{
+        display: none;
+    }
+    .links{
+        display: flex;
+        width: 45em;
+    }
+}
+
+@media screen and (min-width:1024px){/* desktops e tvs */
+    .logo{
+        float: left;
+    }
+    .hamburger-icon{
+        display: none;
+    }
+    .links{
+        display: flex;
+    }
+}
