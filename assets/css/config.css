@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/*
+folha de estilos: configuração inicial e reset da pagina
+tecnologia usada: NA
+responsiva: NA
+status: possiveis alteraçoes
+data da ultima mudança: 04/07/2024
+ultima mudança realizada: adiçao de variaveis a pseudo classe :root
+*/
+
+/*configuraçoes iniciais da pagina*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{/* variaveis seguindo a paleta de cor do site */
+    --lilas: #9290C3;
+    --azul-marinho: #070F2B;
+    --azul-escuro: #1B1A55;
+    --azul-real-claro: #535C91;
+    --cor-texto: black;
+    --fonte-padrao: "Poppins", sans-serif;
+    --fundo-padrao: white;
+    --cor-efeito-hover: #030099 ;
+}
+
+html,body {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--lilas);
+}

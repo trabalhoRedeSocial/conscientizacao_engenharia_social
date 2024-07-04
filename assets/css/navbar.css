@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+/*
+folha de estilos da navbar
+tecnologia usada: flexbox
+responsiva: sim
+status: finalizado
+data da ultima mudança: 04/07/2024
+ultima mudança realizada: estilização das pseudo-classes
+*/
+
+
+/* estilização e posicionamento */
+.header {
+    width: 100vw;
+    height: 10vh;
+    gap: 15px;
+    background-color: var(--fundo-padrao);
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    position: fixed;
+
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.header .hamburger-icon {
+    margin-left: calc(20px + 0.5em);
+    cursor: pointer;
+}
+.header .container-logo{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 10px;
+    flex: 1 1 auto;
+}
+
+.header .navbar-title {
+    font-size: 0.8em;
+    font-weight: 500;
+
+    color: var(--texto-padrao);
+    font-family: var(--fonte-padrao);
+
+    text-decoration: none;
+    text-wrap: wrap;
+    flex: 0 2 auto;
+}
+
+.header .navbar-logo {
+    width: 2em;
+    margin-top: 0.5em;
+    cursor: pointer;
+}
+
+.header .atalhos{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    flex: 1 1 auto;
+    margin-right: 1.5em;
+
+}
+.header .atalhos .atalho {
+    font-size: 0.8em;
+    color: var(--texto-padrao);
+    font-family: var(--fonte-padrao);
+    text-decoration: none;
+}
+
+
+
+/*estilização das pseudo classes*/
+
+.header .atalhos .atalho:hover{
+    color: var(--cor-efeito-hover);
+    transform: scale(1.1);
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.header .container-logo .navbar-title:hover{
+    color: var(--cor-efeito-hover);
+    transform: scale(1.1);
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+
+
+/*responsividade */
+@media screen and ( max-width: 319px){
+    .header .atalhos{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 320px) {/* dispositivos pequenos*/
+
+.header .atalhos{
+    display: none;
+}
+
+}
+
+@media screen and (min-width: 480px) {/*celulares*/
+    .header .atalhos{
+        display: none;
+    }
+    .header .hamburger-icon{
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {/*tablets*/
+    .header{
+        gap: 10px;
+    }
+    .header .hamburger-icon {
+        display: none;
+    }
+    .header .navbar-logo{
+        margin-left: 1em;
+    }
+    .header .atalhos{
+        display: flex;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {/*desktops*/
+
+    .header .hamburger-icon {
+        display: none;
+    }
+    .header .atalhos{
+        display: flex;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {/*pcs e tvs*/
+    .header .hamburger-icon {
+        display: none;
+    }
+    .header .atalhos{
+        display: flex;
+    }
+}

@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/*
+folha de estilos: sidebar
+tecnologia usada: flexbox
+responsiva: não
+status: em progresso
+data da ultima mudança: 04/07/2024
+ultima mudança realizada: 
+*/
+
+
+/* estilização e posicionamento */
+.sidebar{
+    width: 60vw;
+    height: 100vh;
+    background-color: var(--fundo-padrao);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sidebar .container-sidebar{
+    width: 100%;
+    position: absolute;
+    top: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 auto;
+    border: 2px solid lime;
+}
+.sidebar .container-sidebar .sidebar-logo{
+width: 8em;
+}
+.sidebar .container-sidebar .sidebar-title{
+    font-size: 0.8em;
+    font-weight: 500;
+
+    color: var(--texto-padrao);
+    font-family: var(--fonte-padrao);
+
+    text-decoration: none;
+    text-wrap: wrap;
+    flex: 0 2 auto;
+}
+
+.sidebar .sidebar-atalhos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .sidebar-atalhos .sidebar-atalho{
+    margin-bottom: 1px solid #e8dfec;
+}
+
+
+
+
+
+
+/* responsividade */
+@media screen and (min-width: 320px) {/* dispositivos pequenos*/
+
+    
+    }
+    @media screen and (min-width: 480px) {/*celulares*/
+    
+    
+    }
+    
+    @media screen and (min-width: 768px) {/*tablets*/
+    
+    
+    }
+    @media screen and (min-width: 1024px) {/*desktops*/
+    
+    
+    }
+    @media screen and (min-width: 1200px) {/*pcs e tvs*/
+    
+    
+    }
