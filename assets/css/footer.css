@@ -3,11 +3,119 @@
 /*
 folha de estilos: footer
 tecnologia usada: flexbox
-responsiva: nao
-status: em progresso
+responsiva: sim
+status: concluido
 data da ultima mudança: 04/07/2024
-ultima mudança realizada: 
+ultima mudança realizada: mudança da fonte da classe .autoria na responsividade 
 */
 
 
 /* estilização e posicionamento */
+
+.footer {
+    width: 100vw;
+    height: 12vh;
+    background-color: var(--azul-marinho);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.footer .proz-logo {
+    width: 5em;
+
+    flex: 1 1 auto;
+    margin-left: 3%;
+}
+
+.proz-link {
+    width: 5em;
+    margin-left: 3%;
+    flex: 1 1 auto;
+}
+
+.footer .autoria {
+    display: inline-flex;
+    color: white;
+    font-family: var(--fonte-padrao);
+    text-decoration: none;
+
+    flex: 1 1 auto;
+    text-align: center;
+    text-wrap: wrap;
+    margin-right: 3%;
+}
+
+@media screen and (min-width: 320px) {
+
+    /* dispositivos pequenos*/
+    .proz-logo {
+        transform: scale(1.1);
+    }
+
+    .autoria {
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (min-width: 480px) {
+
+    /*celulares*/
+    .proz-logo {
+        transform: scale(1.2);
+
+    }
+
+    .autoria {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    /*tablets*/
+    .proz-logo {
+        transform: scale(1.3);
+
+    }
+
+    .autoria {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    /*desktops*/
+    .proz-logo {
+        transform: scale(1.4);
+
+    }
+
+    .autoria {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    /*pcs e tvs*/
+    .proz-logo {
+        transform: scale(1.5);
+
+    }
+
+    .autoria {
+        font-size: 1.2em;
+    }
+}

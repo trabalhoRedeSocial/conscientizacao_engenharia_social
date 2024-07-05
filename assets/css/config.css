@@ -34,6 +34,5 @@ html,body {
 
 body {
     background-color: var(--lilas);
-    height: 5000px;
     overflow-x: hidden;
 }
