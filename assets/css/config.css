@@ -1,14 +1,16 @@
 @charset "UTF-8";
 /*
 folha de estilos: configuração inicial e reset da pagina
-tecnologia usada: NA
-responsiva: NA
+tecnologia usada: N/A
+responsiva: N/A
 status: possiveis alteraçoes
 data da ultima mudança: 04/07/2024
 ultima mudança realizada: adiçao de variaveis a pseudo classe :root
 */
 
 /*configuraçoes iniciais da pagina*/
+
+
 * {
     margin: 0;
     padding: 0;
@@ -32,4 +34,6 @@ html,body {
 
 body {
     background-color: var(--lilas);
+    height: 5000px;
+    overflow-x: hidden;
 }

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,22 +14,18 @@
     <link rel="stylesheet" href="./assets/css/config.css" importance="high">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="./assets/css/sidebar.css">
-    <title>Document</title>
+    <title>Engenharia Social</title>
 </head>
 
 <body>
     <header class="header" id="header"><!--navbar-->
-
-        <svg class="hamburger-icon" id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" height="45px"
-            viewBox="0 -960 960 960" width="45px" fill="#000000">
-            <path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
-        </svg>
+        <img class="hamburger-icon" id="hamburger-icon" src="./assets/icones/icone-menu-hamburger.svg" alt="">
 
         <div class="container-logo" id="conatiner-logo">
-            <a href="#main">
+            <a href="#top">
                 <img src="./assets/imgs/hacker.png" alt="logo" class="navbar-logo" id="navbar-logo">
             </a>
-            <a href="#main" class="navbar-title">ENGENHARIA <wbr>SOCIAL</a>
+            <a href="#top" class="navbar-title">ENGENHARIA <wbr>SOCIAL</a>
         </div>
 
         <nav class="atalhos" id="atalhos">
@@ -42,22 +37,29 @@
         </nav>
     </header>
 
-    <aside class="sidebar" id="sidebar">
-        <div class="container-sidebar" id="conatiner-sidebar">
-            <a href="#main">
+    <aside class="sidebar" id="sidebar"><!-- sidebar -->
+        <div class="container-sidebar" id="container-sidebar">
+            <img src="./assets/icones/icone-fechar.svg" alt="" class="close-icon" id="close-icon">
+            <a href="#top">
                 <img src="./assets/imgs/hacker.png" alt="logo" class="sidebar-logo" id="sidebar-logo">
             </a>
-            <a href="#main" class="sidebar-title">ENGENHARIA <wbr>SOCIAL</a>
+            <a href="#top" class="sidebar-title">ENGENHARIA <wbr>SOCIAL</a>
         </div>
         <nav class="sidebar-atalhos" id="sidebar-atalhos">
-            <a href="#" class="atalho" id="sidebar-atalho">O que é?</a>
-            <a href="#" class="atalho" id="sidebar-atalho">Casos reais</a>
-            <a href="#" class="atalho" id="sidebar-atalho">Tipos de ataque</a>
-            <a href="#" class="atalho" id="sidebar-atalho">Como prevenir</a>
-            <a href="#" class="atalho" id="sidebar-atalho">Fontes</a>
+            <a href="#" class="sidebar-atalho" id="sidebar-atalho">O que é?</a>
+            <hr class="sidebar-hr">
+            <a href="#" class="sidebar-atalho" id="sidebar-atalho">Casos reais</a>
+            <hr class="sidebar-hr">
+            <a href="#" class="sidebar-atalho" id="sidebar-atalho">Tipos de ataque</a>
+            <hr class="sidebar-hr">
+            <a href="#" class="sidebar-atalho" id="sidebar-atalho">Como prevenir</a>
+            <hr class="sidebar-hr">
+            <a href="#" class="sidebar-atalho" id="sidebar-atalho">Fontes</a>
         </nav>
     </aside>
 
-</body>
 
+
+    <script src="./assets/js/home.js" defer></script>
+</body>
 </html>
