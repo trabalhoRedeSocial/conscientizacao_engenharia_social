@@ -16,7 +16,7 @@ ultima mudança realizada: estilização das pseudo-classes
     height: 10vh;
     gap: 15px;
     background-color: var(--fundo-padrao);
-
+    z-index: 500;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;

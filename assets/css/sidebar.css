@@ -6,7 +6,7 @@ tecnologia usada: flexbox
 responsiva: sim
 status: concluida
 data da ultima mudança: 04/07/2024
-ultima mudança realizada: posicionamento do botao de fechar
+ultima mudança realizada: prevençao de outros elementos sobreporem a sidebar
 */
 
 
@@ -23,6 +23,7 @@ ultima mudança realizada: posicionamento do botao de fechar
 
     gap: 2em;
     flex: 1 1 auto;
+    z-index: 1000;/*<- garante que nada sobreponha a sidebar*/
 }
 
 
