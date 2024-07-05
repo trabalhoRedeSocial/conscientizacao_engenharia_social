@@ -13,7 +13,7 @@ ultima mudança realizada: estilização das pseudo-classes
 /* estilização e posicionamento */
 .header {
     width: 100vw;
-    height: 10vh;
+    height: calc(10vh + 0.5em);
     gap: 15px;
     background-color: var(--fundo-padrao);
     z-index: 500;
@@ -114,10 +114,7 @@ ultima mudança realizada: estilização das pseudo-classes
     .header .atalhos{
         display: none;
     }
-    .header .hamburger-icon{
-        width: 50px;
-        height: 50px;
-    }
+
 
 }
 

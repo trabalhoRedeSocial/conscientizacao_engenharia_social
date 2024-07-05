@@ -36,7 +36,7 @@ ultima mudança realizada: estilização da seta para subir
     margin-left: 3%;
 }
 
-.proz-link {
+.footer .proz-link {
     width: 5em;
     margin-left: 3%;
     flex: 1 1 auto;
@@ -55,7 +55,7 @@ ultima mudança realizada: estilização da seta para subir
     margin-right: 3%;
 }
 
-
+/* o icone subir esta fora do footer mas faz parte dele*/
 .container-subir{
     width: 100vw;
     justify-content: end;
@@ -66,7 +66,7 @@ ultima mudança realizada: estilização da seta para subir
 }
 
 .subir {
-    width: 5em;
+    width: 4em;
     transform: rotate(-90deg);
     display: inline-flex;
     z-index: 10;
