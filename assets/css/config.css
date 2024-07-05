@@ -23,9 +23,10 @@ ultima mudança realizada: adiçao de variaveis a pseudo classe :root
     --azul-escuro: #1B1A55;
     --azul-real-claro: #535C91;
     --cor-texto: black;
+    --cor-texto1: #333; 
     --fonte-padrao: "Poppins", sans-serif;
     --fundo-padrao: white;
-    --cor-efeito-hover: #030099 ;
+    --cor-efeito-hover: var(--azul-marinho) ;
 }
 
 html,body {

@@ -1,0 +1,458 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* secao 1 */
+.tipos {
+  background-color: #1B1A55;
+}
+
+/* inico carrosel */
+.tipos .carrosel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.tipos .carrosel .container {
+  display: none;
+}
+
+.tipos .carrosel .container.active {
+  background-color: #9290C3;
+  padding: 10px;
+  height: 60%;
+  width: 75%;
+  border-radius: 20px;
+  display: flex;
+}
+
+.tipos .container.active .content {
+  background-color: #9290C3;
+  border-radius: 20px;
+  display: inline-block;
+  justify-content: center;
+  align-items: top;
+  height: auto;
+  width: 60%;
+}
+
+.tipos .container.active .content .text-titulo {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 1vh;
+}
+
+.tipos .container.active .content .text-titulo h2 {
+  font-size: 4em;
+  font-weight: bolder;
+}
+
+.tipos .container.active .mobile {
+  display: none;
+}
+
+.tipos .container.active .content .text-conteudo {
+  display: inline-block;
+  justify-content: center;
+  padding: 2vh;
+
+}
+
+.tipos .container.active .content .text-conteudo p {
+  font-size: large;
+}
+
+.tipos .container.active .content .text-conteudo h3 {
+  font-size: large;
+  font-weight: bolder;
+}
+
+
+.tipos .container.active .img {
+  background-color: #070F2B;
+  border-radius: 20px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.tipos .container.active .img img{
+  height: auto;
+  width: 90%;
+  border-radius: 20px;
+}
+.tipos .container.active .img #img-mobile{
+  display: none;
+}
+
+.tipos .button {
+  background-color: #ffffff00;
+  color: #fff;
+  width: 3em;
+  height: 2.9em;
+  border: #3654ff 0.2em solid;
+  border-radius: 11px;
+  transition: all 0.6s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 10px;
+}
+
+.tipos .button:hover {
+  background-color: #3654ff;
+  cursor: pointer;
+}
+
+.tipos .button svg {
+  width: 1.6em;
+  position: absolute;
+  transition: all 0.6s ease;
+}
+
+/* fim carrosel */
+
+/* fim secao 1 */
+
+/* secao 2 */
+
+.casos {
+  background-color: #1B1A55;
+}
+
+/* inico carrosel */
+.casos .carrosel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.casos .carrosel .container {
+  display: none;
+}
+
+.casos .carrosel .container.active {
+  background-color: #9290C3;
+  padding: 10px;
+  height: 60%;
+  width: 75%;
+  border-radius: 20px;
+  display: flex;
+  grid-template-columns: 2fr 1fr;
+  flex-direction: row-reverse;
+}
+
+.casos .container.active .content {
+  background-color: #9290C3;
+  border-radius: 20px;
+  display: inline-block;
+  justify-content: center;
+  align-items: top;
+  height: auto;
+  width: 60%;
+}
+
+.casos .container.active .mobile {
+  display: none;
+}
+
+.casos .container.active .content .text-titulo {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 1vh;
+}
+
+.casos .container.active .content .text-titulo h2 {
+  font-size: 4em;
+  font-weight: bolder;
+}
+
+.casos .container.active .content .text-conteudo {
+  display: inline-block;
+  justify-content: center;
+  padding: 2vh;
+}
+
+.casos .container.active .content .text-conteudo p {
+  font-size: large;
+}
+
+.casos .container.active .content .text-conteudo h3 {
+  font-size: large;
+  font-weight: bolder;
+}
+
+
+.casos .container.active .img {
+  background-color: #070F2B;
+  border-radius: 20px;
+  height: auto;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.casos .container.active .img img{
+  height: auto;
+  width: 90%;
+  border-radius: 20px;
+}
+.casos .container.active .img #img-mobile{
+  display: none;
+}
+
+.casos .button {
+  background-color: #ffffff00;
+  color: #fff;
+  width: 3em;
+  height: 2.9em;
+  border: #3654ff 0.2em solid;
+  border-radius: 11px;
+  transition: all 0.6s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.casos .button:hover {
+  background-color: #3654ff;
+  cursor: pointer;
+}
+
+.casos .button svg {
+  width: 1.6em;
+  position: absolute;
+  transition: all 0.6s ease;
+}
+
+/* fim carrosel */
+@media (min-width: 899px) and (max-width: 1250px) {
+
+  .tipos .carrosel .container.active {
+
+    height: auto;
+    width: 75%;
+   
+  }
+
+  .tipos .container.active .content .text-titulo {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 1vh;
+    padding: 0%;
+  }
+
+  .tipos .container.active .content .text-titulo h2 {
+    font-size: 3em;
+    font-weight: bolder;
+  } 
+
+  .tipos .container.active .content .text-conteudo {
+    display: inline-block;
+    justify-content: center;
+    padding: 0 2vh;
+  }
+
+  .tipos .container.active .img img{
+    height: 60%;
+    width: 90%;
+    border-radius: 20px;
+    display: block;
+  }
+
+  .tipos .container.active .img #img-mobile{
+    display: none;
+  }
+
+  .casos .container.active .content .text-titulo {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 1vh;
+    padding: 0%;
+  }
+
+  .casos .container.active .content .text-titulo h2 {
+    font-size: 3em;
+    font-weight: bolder;
+  }
+
+  .casos .container.active .content .text-conteudo {
+    display: inline-block;
+    justify-content: center;
+    padding: 0 2vh;
+  }
+
+  .casos .container.active .img img{
+    height: 60%;
+    width: 90%;
+    border-radius: 20px;
+    display: block;
+  }
+
+  .casos .container.active .img #img-mobile{
+    display: none;
+  }
+
+}
+
+@media (max-width: 899px) {
+  #italo .container.active {
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+
+  #italo .container.active .img {
+    background-color: #070F2B;
+    border-radius: 20px;
+    min-height: 15em;
+    width: auto;
+  }
+
+  .tipos .container.active .content {
+    background-color: #9290C3;
+    border-radius: 20px;
+    display: inline-block;
+    justify-content: center;
+    align-items: top;
+    height: auto;
+    width: 100%;
+  }
+
+  .tipos .container.active .content .text-titulo {
+    display: none;
+  }
+
+  .tipos .container.active .mobile {
+    background-color: #9290C3;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 1vh;
+    border-radius: 20px;
+  }
+
+  .tipos .container.active .img #img-pc{
+    display: none;
+  }
+
+  .tipos .container.active .img #img-mobile{
+    height: auto;
+    width: 99%;
+    border-radius: 20px;
+    display: block;
+    max-height: 300px;
+  }
+
+  .casos .container.active .content {
+    background-color: #9290C3;
+    border-radius: 20px;
+    display: inline-block;
+    justify-content: center;
+    align-items: top;
+    height: auto;
+    width: 100%;
+  }
+
+  .casos .container.active .content .text-titulo {
+    display: none;
+
+  }
+
+  .casos .container.active .mobile {
+    background-color: #9290C3;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 1vh;
+    border-radius: 20px;
+  }
+  .casos .container.active .img #img-pc{
+    display: none;
+  }
+
+  .casos .container.active .img #img-mobile{
+    height: auto;
+    width: 99%;
+    border-radius: 20px;
+    display: block;
+    max-height: 300px;
+  }
+
+}
+
+.fontes {
+  background-color: #9290C3;
+}
+
+.fontes .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fontes .container .text-titulo {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 3vh;
+  padding-top: 5em;
+}
+
+.fontes .container .text-titulo h1 {
+  font-size: 6em;
+  font-weight: bolder;
+}
+
+.fontes .container .content {
+  margin: 10px;
+  padding: 10px;
+}
+
+.fontes .container .content .icon-list {
+  list-style: none;
+  padding: 0;
+}
+
+.fontes .container .content .icon-list li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.fontes .container .content .icon-list li p {
+  font-size: large;
+}
+
+.fontes .container .content .icon-list .icon {
+  margin-right: 10px;
+  color: yellow;
+}

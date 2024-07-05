@@ -27,6 +27,7 @@ ultima mudança realizada: estilização das pseudo-classes
 }
 
 .header .hamburger-icon {
+    width: 40px;
     margin-left: calc(20px + 0.5em);
     cursor: pointer;
 }
@@ -81,6 +82,7 @@ ultima mudança realizada: estilização das pseudo-classes
 
 .header .atalhos .atalho:hover{
     color: var(--cor-efeito-hover);
+    text-decoration: underline;
     transform: scale(1.1);
     transition: all 0.3s;
     transition-timing-function: ease-in-out;
@@ -88,6 +90,7 @@ ultima mudança realizada: estilização das pseudo-classes
 
 .header .container-logo .navbar-title:hover{
     color: var(--cor-efeito-hover);
+    text-decoration: underline;
     transform: scale(1.1);
     transition: all 0.3s;
     transition-timing-function: ease-in-out;
