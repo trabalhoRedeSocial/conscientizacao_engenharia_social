@@ -21,9 +21,9 @@ ultima mudança realizada: estilização das pseudo-classes
     flex-flow: row nowrap;
     align-items: center;
     position: fixed;
-
     transition: all 0.3s;
     transition-timing-function: ease-in-out;
+    margin-bottom: calc(10vh + 0.5em);;
 }
 
 .header .hamburger-icon {
