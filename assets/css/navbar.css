@@ -13,7 +13,7 @@ ultima mudança realizada: estilização das pseudo-classes
 /* estilização e posicionamento */
 .header {
     width: 100vw;
-    height: calc(10vh + 0.5em);
+    height: calc(10vh + 0.7em);
     gap: 15px;
     background-color: var(--fundo-padrao);
     z-index: 500;
@@ -23,11 +23,9 @@ ultima mudança realizada: estilização das pseudo-classes
     position: fixed;
     transition: all 0.3s;
     transition-timing-function: ease-in-out;
-    margin-bottom: calc(10vh + 0.5em);;
 }
 
 .header .hamburger-icon {
-    width: 40px;
     margin-left: calc(20px + 0.5em);
     cursor: pointer;
 }
@@ -54,7 +52,7 @@ ultima mudança realizada: estilização das pseudo-classes
 }
 
 .header .navbar-logo {
-    width: 2.4em;
+    width: calc(1em + 8vh);
     margin-top: 0.5em;
     cursor: pointer;
 }
@@ -82,7 +80,6 @@ ultima mudança realizada: estilização das pseudo-classes
 
 .header .atalhos .atalho:hover{
     color: var(--cor-efeito-hover);
-    text-decoration: underline;
     transform: scale(1.1);
     transition: all 0.3s;
     transition-timing-function: ease-in-out;
@@ -90,7 +87,6 @@ ultima mudança realizada: estilização das pseudo-classes
 
 .header .container-logo .navbar-title:hover{
     color: var(--cor-efeito-hover);
-    text-decoration: underline;
     transform: scale(1.1);
     transition: all 0.3s;
     transition-timing-function: ease-in-out;
@@ -110,6 +106,9 @@ ultima mudança realizada: estilização das pseudo-classes
 .header .atalhos{
     display: none;
 }
+.header .navbar-logo{
+
+}
 
 }
 
@@ -117,7 +116,9 @@ ultima mudança realizada: estilização das pseudo-classes
     .header .atalhos{
         display: none;
     }
-
+    .header .navbar-logo{
+        
+    }
 
 }
 
@@ -145,6 +146,9 @@ ultima mudança realizada: estilização das pseudo-classes
     .header .atalhos{
         display: flex;
     }
+    .header .navbar-logo{
+        transform: scale(1);
+    }
 
 }
 
@@ -154,5 +158,8 @@ ultima mudança realizada: estilização das pseudo-classes
     }
     .header .atalhos{
         display: flex;
+    }
+    .header .navbar-logo{
+        transform: scale(1);
     }
 }
