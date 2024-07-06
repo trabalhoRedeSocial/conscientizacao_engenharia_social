@@ -1,27 +1,27 @@
-body {
-  font-family: 'Poppins', sans-serif;
-}
-
-section {
+/* section {
   height: 100vh;
   width: 100%;
   margin: 0;
   padding: 0;
-}
+} */
 
 /* secao 1 */
 .tipos {
   background-color: #1B1A55;
+  width: 100vw;
+
 }
 
 /* inico carrosel */
 .tipos .carrosel {
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: 10px;
+  padding: 5em;
 
 }
 
@@ -29,12 +29,13 @@ section {
   display: none;
 }
 
-.tipos .carrosel .container.active {
+.tipos .carrosel .container.active{
   background-color: #9290C3;
   padding: 10px;
   height: 60%;
   width: 75%;
   border-radius: 20px;
+  margin-bottom: 1em;
   display: flex;
 }
 
@@ -253,7 +254,8 @@ section {
 
   .tipos .carrosel .container.active {
 
-    height: auto;
+    height: 50px;
+    margin-bottom: 5em;
     width: 75%;
    
   }
@@ -320,13 +322,14 @@ section {
 
 }
 
-@media (max-width: 899px) {
+@media screen and (max-width: 899px) {
   #italo .container.active {
-    height: auto;
+    height: 35%;
     width: 90%;
     display: flex;
     flex-direction: column-reverse;
-
+    background-color: red;
+    margin-bottom: 3em;
   }
 
   #italo .container.active .img {

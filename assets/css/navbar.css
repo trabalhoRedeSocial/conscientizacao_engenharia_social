@@ -26,6 +26,8 @@ ultima mudança realizada: estilização das pseudo-classes
 }
 
 .header .hamburger-icon {
+    width: 40px;
+    height: 40px;
     margin-left: calc(20px + 0.5em);
     cursor: pointer;
 }
@@ -106,18 +108,11 @@ ultima mudança realizada: estilização das pseudo-classes
 .header .atalhos{
     display: none;
 }
-.header .navbar-logo{
-
-}
-
 }
 
 @media screen and (min-width: 480px) {/*celulares*/
     .header .atalhos{
         display: none;
-    }
-    .header .navbar-logo{
-        
     }
 
 }

@@ -15,6 +15,8 @@ ultima mudança realizada: adiçao de variaveis a pseudo classe :root
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
 :root{/* variaveis seguindo a paleta de cor do site */
@@ -34,6 +36,6 @@ html,body {
 
 body {
     background-color: var(--lilas);
-
+    font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
