@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+.grupo-trabalho {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 3em;
+
+}
+
+.grupo-trabalho .menbro {
+    min-width: 200px;
+
+    width: 15em;
+    background-color: var(--fundo-padrao);
+    border-radius: 30px;
+    padding: 10px;
+    gap: 7px;
+
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    flex: 3% 1 200px;
+
+}
+
+.grupo-trabalho .menbro .menbro-foto {
+    width: 6em;
+    height: 6em;
+    background-image: url(https://play-lh.googleusercontent.com/ePO8kmDI3mHQbCcMeSZyhQcXzononmORfsgdVxX-LeQ0GitA2Fa4Xuq-YXxoe029TSU);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px solid lime;
+    border-radius: 100%;
+
+}
+.icons{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.grupo-trabalho .menbro .icon {
+    width: 40px;
+    height: 40px;
+}
+
+.grupo-trabalho .menbro .descricao {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8em;
+    line-height: 1.2;
+}
+
+.nome{
+    font-size: 1.3em;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}

@@ -5,35 +5,34 @@
   padding: 0;
 } */
 
+
 /* secao 1 */
 .tipos {
   background-color: #1B1A55;
   width: 100vw;
-
+  padding: 10px;
 }
 
 /* inico carrosel */
 .tipos .carrosel {
   display: flex;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   justify-content: center;
   justify-content: space-around;
   align-items: center;
   gap: 10px;
-  padding: 5em;
-
 }
 
 .tipos .carrosel .container {
   display: none;
 }
 
-.tipos .carrosel .container.active{
+.tipos .carrosel .container.active{/* desktop*/
   background-color: #9290C3;
   padding: 10px;
   height: 60%;
-  width: 75%;
+  width: 90%;
   border-radius: 20px;
   margin-bottom: 1em;
   display: flex;
@@ -133,7 +132,8 @@
 /* secao 2 */
 
 .casos {
-  background-color: #1B1A55;
+  background-color: hsl(241, 53%, 22%);
+
 }
 
 /* inico carrosel */
@@ -143,7 +143,6 @@
   height: 100%;
   justify-content: center;
   align-items: center;
-  gap: 10px;
 
 }
 
@@ -152,9 +151,9 @@
 }
 
 .casos .carrosel .container.active {
-  background-color: #9290C3;
+  background-color: var(--lilas);
   padding: 10px;
-  height: 60%;
+  height: 55%;
   width: 75%;
   border-radius: 20px;
   display: flex;
@@ -253,10 +252,10 @@
 @media (min-width: 899px) and (max-width: 1250px) {
 
   .tipos .carrosel .container.active {
-
-    height: 50px;
+    background-color: var(--lilas);
+    height: 55%;
     margin-bottom: 5em;
-    width: 75%;
+    width: 80%;
    
   }
 
@@ -324,12 +323,12 @@
 
 @media screen and (max-width: 899px) {
   #italo .container.active {
-    height: 35%;
+    background-color: var(--lilas);
+    height: 24em;
     width: 90%;
     display: flex;
     flex-direction: column-reverse;
-    background-color: red;
-    margin-bottom: 3em;
+    overflow-y: scroll;
   }
 
   #italo .container.active .img {

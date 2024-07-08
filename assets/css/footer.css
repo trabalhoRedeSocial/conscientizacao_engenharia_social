@@ -6,7 +6,7 @@ tecnologia usada: flexbox
 responsiva: sim
 status: concluido
 data da ultima mudança: 04/07/2024
-ultima mudança realizada: estilização da seta para subir
+ultima mudança realizada: mudança da cor do background da classe .container-subir para lilás
 */
 
 
@@ -59,8 +59,8 @@ ultima mudança realizada: estilização da seta para subir
 /* o icone subir esta fora do footer mas faz parte dele*/
 .container-subir{
     width: 100vw;
+    background-color: var(--lilas);
     justify-content: end;
-    position: relative;
     display: flex;
     transition: all 0.3s;
     transition-timing-function: ease-in-out;
