@@ -6,11 +6,58 @@
 } */
 
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.icon {
+  flex: 1;
+  min-width: 250px; /* ajuste conforme necessário */
+  margin: 10px;
+  text-align: center;
+}
+
+.icon .image {
+  width: 100px; /* Defina a largura desejada */
+  height: 100px; /* Defina a altura desejada */
+  object-fit: cover; /* Isso garante que a imagem mantenha suas proporções */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+.icon p {
+  margin-top: 10px; /* Espaço entre a imagem e o texto */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+
+p{
+  text-align: justify;
+}
+
+.text-conteudo p {
+  line-height: 1.8; 
+  text-align: justify;
+} 
+
+
 /* secao 1 */
 .tipos {
   background-color: #1B1A55;
   width: 100vw;
   padding: 10px;
+}
+
+.tipos .container {
+  display: none; /* Oculta todos os contêineres por padrão */
+  opacity: 0; /* Garante que os contêineres ocultos não ocupem espaço */
+  transition: opacity 0.5s ease; /* Transição suave de opacidade */
+}
+
+.tipos .container.active {
+  display: flex; /* Mostra o contêiner ativo */
+  opacity: 1; /* Torna o contêiner visível */
 }
 
 /* inico carrosel */
@@ -22,6 +69,7 @@
   justify-content: space-around;
   align-items: center;
   gap: 10px;
+
 }
 
 .tipos .carrosel .container {
@@ -29,13 +77,14 @@
 }
 
 .tipos .carrosel .container.active{/* desktop*/
-  background-color: #9290C3;
+  background-color: var(--lilas);
   padding: 10px;
-  height: 60%;
-  width: 90%;
+  height: 55%;
+  width: 73%;
   border-radius: 20px;
-  margin-bottom: 1em;
   display: flex;
+  flex-direction: row;
+  margin-top: 20px;
 }
 
 .tipos .container.active .content {
@@ -143,7 +192,7 @@
   height: 100%;
   justify-content: center;
   align-items: center;
-
+  padding: 20px;
 }
 
 .casos .carrosel .container {

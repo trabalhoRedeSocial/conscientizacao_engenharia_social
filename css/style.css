@@ -61,63 +61,87 @@
     padding: 0;
   } */
 
-  #primeiro{
-    padding: 2.3em;
+  #primeiro {
+    padding: 5% 2%; /* Padding responsivo */
     background-color: #1B1A55;
-    justify-content: center;
     display: flex;
-    text-align: center;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
+    text-align: center;
   }
-
-  #primeiro .container{
-    margin-top: 16vh;
+  
+  #primeiro .container {
+    margin-top: 10vh; /* Margin-top ajustada para tela menor */
     background-color: #9290C3;
     padding: 15px;
-    height: 60%;
-    width: 80%;
     border-radius: 20px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    grid-template-rows: auto; /* Ajustável conforme conteúdo */
     align-items: center;
     overflow: hidden;
-    
   }
-  #primeiro .container #content{
+  
+  #primeiro .container #content {
     background-color: #9290C3;
     border-radius: 20px;
+    padding: 20px;
   }
-  #primeiro .container #content .text-titulo{
-    align-items: center;
-    justify-content: center;
+  
+  #primeiro .container #content .text-titulo {
     display: flex;
-    margin: 2vh;
-
+    justify-content: center;
+    margin: 20px 0;
   }
-  #primeiro .container #content .text-titulo h2{
-    font-size: 40px;
-    font-weight: bolder;
+  
+  #primeiro .container #content .text-titulo h2 {
+    font-size: 2em; /* Tamanho de fonte responsivo */
+    font-weight: bold;
     color: black;
   }
-  #primeiro .container #content .text-conteudo{
-    display: inline-block;
-    justify-content: center;
-    padding: 3vh;
+  
+  #primeiro .container #content .text-conteudo {
+    padding: 20px;
+    text-align: justify; /* Alinhar texto justificado */
   }
-  #primeiro .container #content .text-conteudo h3{
-    font-size: large;
-    font-weight: bolder;
+  
+  #primeiro .container #content .text-conteudo h3 {
+    font-size: 1.5em; /* Tamanho de fonte responsivo */
+    font-weight: bold;
     color: #1B1A55;
   }
-
-  #primeiro .container #info{
+  
+  #primeiro .container #info {
     background-color: #9290C3;
     border-radius: 20px;
     margin: 3vh;
-    border: 2 px solid lime;
   }
+  
+  /* Media queries para telas menores */
+  @media screen and (max-width: 768px) {
+    #primeiro {
+      padding: 10% 5%; /* Padding maior para telas menores */
+    }
+  
+    #primeiro .container {
+      margin-top: 5vh; /* Margin-top reduzida */
+      width: 90%; /* Largura ajustada para telas menores */
+    }
+  
+    #primeiro .container #content .text-titulo h2 {
+      font-size: 1.5em; /* Reduzir tamanho de fonte para telas menores */
+    }
+  
+    #primeiro .container #content .text-conteudo {
+      padding: 10px; /* Padding reduzido */
+    }
+  
+    #primeiro .container #content .text-conteudo h3 {
+      font-size: 1.2em; /* Reduzir tamanho de fonte para telas menores */
+    }
+  }
+  
 
   .malware-img{
     width: 3em;
