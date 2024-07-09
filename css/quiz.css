@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.quiz{
+    width: 100vw;
+    height: 30vh;
+    background-color: var(--lilas);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.quiz-link{
+    font-size: 1em;
+    text-decoration: none;
+}
+.quiz-link:hover{
+    transform: scale(1.1);
+}
+.quiz-titulo{
+    font-size: 3em;
+}
