@@ -4,26 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/imgs/hacker.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/config.css" importance="high">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="./assets/css/sidebar.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/styleItalo.css">
-
     <title>Engenharia Social</title>
+
+
+    <link rel="stylesheet" href="css/styleItalo.css">
+    <link rel="stylesheet" href="css/styleKel.css">
+
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/config.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
 
+    <!-- Barra de navegação -->
     <header class="header" id="header">
         <!--navbar-->
-        <img class="hamburger-icon" id="hamburger-icon" src="./assets/icones/icone-menu-hamburger.svg" alt="">
+        <img class="hamburger-icon" id="hamburger-icon" src="icones/icone-menu-hamburger.svg" alt="">
 
         <div class="container-logo" id="conatiner-logo">
             <a href="#top">
-                <img src="./assets/imgs/hacker.png" alt="logo" class="navbar-logo" id="navbar-logo">
+                <img src="imgs/hacker.png" alt="logo" class="navbar-logo" id="navbar-logo">
             </a>
             <a href="#top" class="navbar-title">ENGENHARIA <wbr>SOCIAL</a>
         </div>
@@ -31,17 +46,16 @@
         <nav class="atalhos" id="atalhos">
             <a href="#primeiro" class="atalho" id="atalho">O que é?</a>
             <a href="#casos" class="atalho" id="atalho">Casos reais</a>
-            <a href="#casos" class="atalho" id="atalho">Tipos de ataque</a>
+            <a href="#tipos" class="atalho" id="atalho">Tipos de ataque</a>
             <a href="#segundo" class="atalho" id="atalho">Como prevenir</a>
             <a href="#fontes" class="atalho" id="atalho">Fontes</a>
         </nav>
     </header>
-
     <aside class="sidebar" id="sidebar"><!-- sidebar -->
         <div class="container-sidebar" id="container-sidebar">
-            <img src="./assets/icones/icone-fechar.svg" alt="" class="close-icon" id="close-icon">
+            <img src="icones/icone-fechar.svg" alt="" class="close-icon" id="close-icon">
             <a href="#top">
-                <img src="./assets/imgs/hacker.png" alt="logo" class="sidebar-logo" id="sidebar-logo">
+                <img src="imgs/hacker.png" alt="logo" class="sidebar-logo" id="sidebar-logo">
             </a>
             <a href="#top" class="sidebar-title">ENGENHARIA <wbr>SOCIAL</a>
         </div>
@@ -50,50 +64,69 @@
             <hr class="sidebar-hr">
             <a href="#casos" class="sidebar-atalho" id="sidebar-atalho">Casos reais</a>
             <hr class="sidebar-hr">
-            <a href="#casos" class="sidebar-atalho" id="sidebar-atalho">Tipos de ataque</a>
+            <a href="#tipos" class="sidebar-atalho" id="sidebar-atalho">Tipos de ataque</a>
             <hr class="sidebar-hr">
             <a href="#segundo" class="sidebar-atalho" id="sidebar-atalho">Como prevenir</a>
             <hr class="sidebar-hr">
             <a href="#fontes" class="sidebar-atalho" id="sidebar-atalho">Fontes</a>
         </nav>
     </aside>
+    <!--Fim Barra de navegação -->
 
 
+    <!-- kel -->
     <section id="primeiro">
         <main class="container">
             <div id="content">
                 <div class="text-titulo">
-                    <h2>O QUE É ENGENHARIA SOCIAL?</h2>
+                    <h2>O QUE É ENGENHARIA SOCIAL ?</h2>
                 </div>
                 <div class="text-conteudo">
-                    <p>A Engenharia social é uma técnica utilizada na área de segurança da informação que se baseia na manipulação psicológica das 
-                        pessoas para obter acesso não autorizado a informações confidenciais ou sistemas computacionais. Em vez de atacar diretamente as
-                         vulnerabilidades técnicas dos sistemas, os engenheiros sociais exploram a tendência humana de confiar e de seguir regras sociais 
-                         para enganar os usuários e obter acesso privilegiado. Isso pode envolver desde a criação de falsas identidades até o uso de pretextos 
-                         convincentes para persuadir indivíduos a divulgar senhas, informações pessoais ou a realizar ações que comprometam a segurança de uma organização. 
-                         Portanto, entender e estar alerta para essas técnicas é fundamental para proteger informações sensíveis e manter a segurança cibernética robusta.
+                    <p>
+                        A Engenharia social é uma técnica utilizada na área de segurança da informação que se baseia na
+                        manipulação psicológica das
+                        pessoas para obter acesso não autorizado a informações confidenciais ou sistemas computacionais.
+                        Em vez de atacar diretamente as
+                        vulnerabilidades técnicas dos sistemas, os engenheiros sociais exploram a tendência humana de
+                        confiar e de seguir regras sociais
+                        para enganar os usuários e obter acesso privilegiado. Isso pode envolver desde a criação de
+                        falsas identidades até o uso de pretextos
+                        convincentes para persuadir indivíduos a divulgar senhas, informações pessoais ou a realizar
+                        ações que comprometam a segurança de uma organização.
+                        Portanto, entender e estar alerta para essas técnicas é fundamental para proteger informações
+                        sensíveis e manter a segurança cibernética robusta.
                     </p>
                 </div>
             </div>
+
             <div id="info">
-                <img src="./assets/imgs/malware.png" id="malware-img" alt="Imagem de malware">
-            </div>
+                <img src="imgs/malware.png">
         </main>
+
     </section>
-    
     <section id="segundo">
-        <h1 class="title">COMO SE PREVENIR ?</h1>
+
+        <div class="container-titulo">
+            <h1 class="title">COMO SE PREVENIR ?</h1>
+        </div>
+
         <main class="container">
+
             <div class="icon">
-                <img class="image" src="./assets/imgs/icone-lampada.png" alt="">
+                <img class="image" src="imgs/icone-lampada.png" alt="">
+
                 <div>
-                    <p> Eduque os funcionários sobre como identificar e responder a ataques. Enfatize a importância de proteger informações pessoais e reconhecer golpes.<br> 
-                        Utilize filtros de spam, gateways de e-mail seguros e firewalls para bloquear ataques de phishing.
+                    <p> Eduque os funcionários sobre como identificar e responder a ataques. Enfatize a importância de
+                        proteger informações pessoais e reconhecer golpes.<br>
+                        Utilize filtros de spam, gateways de e-mail seguros e firewalls para bloquear ataques de
+                        phishing.
                     </p>
                 </div>
             </div>
+
             <div class="icon">
-                <img class="image" src="./assets/imgs/icone-seguranca.png" alt="">
+                <img class="image" src="imgs/icone-seguranca.png" alt="">
+
                 <div>
                     <p>
                         Implemente autenticação multifatorial e abordagens de segurança baseadas em zero trust.<br>
@@ -101,8 +134,9 @@
                     </p>
                 </div>
             </div>
+
             <div class="icon">
-                <img class="image" src="./assets/imgs/icone-cadeado.png" alt="">
+                <img class="image" src="imgs/icone-cadeado.png" alt="">
                 <div>
                     <p>
                         Use senhas únicas e complexas para cada conta e gerenciadores de senhas.<br>
@@ -110,15 +144,17 @@
                     </p>
                 </div>
             </div>
+
         </main>
+
+
+
     </section>
-    
-    
+    <!-- fim kel -->
 
-
+    <!-- italo -->
     <section class="tipos" id="tipos">
-        <main class="carrosel"> 
-
+        <main class="carrosel">
             <button class="button" id="prev">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6">
@@ -126,29 +162,27 @@
                 </svg>
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75">
                 </path>
-                </svg>  
+                </svg>
             </button>
-
             <div class="container active">
                 <div class="content">
                     <div class="text-titulo">
                         <h2>Tipos de ataque</h2>
                     </div>
                     <div class="text-conteudo">
-                        <p> <Strong>- Phishing:</Strong>
+
+                        <p><Strong>- Phishing:</Strong>
                             E-mails falsos de empresas conhecidas pedindo informações pessoais.<br>
                             <Strong>- Spear phishing:</Strong>
                             Ataques personalizados usando informações das redes sociais.<br>
                             <Strong>- Baiting:</Strong>
-                            Oferece algo valioso para atrair vítimas a fornecer informações ou baixar malware, como unidades USB infectadas deixadas em locais públicos.<br>
-                            <Strong>- Quid pro quo:</Strong>
-                            Promete benefícios em troca de informações confidenciais, como ligações oferecendo descontos falsos.<br>
-                            <Strong>- Tailgating:</Strong>
-                            Acesso não autorizado seguindo uma pessoa autorizada para áreas restritas.<br>
+                            Oferece algo valioso para atrair vítimas a fornecer informações ou baixar malware, como
+                            unidades USB infectadas deixadas em locais públicos.<br>
                         </p>
                     </div>
                 </div>
-                <div class="img"><img src="imagens/icone-tipos-de-ataques.png" alt="" id="img-pc"><img src="imagens/icone-tipos-de-ataques.png" alt="" id="img-mobile"></div>
+                <div class="img"><img src="imgs/icone-tipos-de-ataques.png" alt="" id="img-pc"><img
+                        src="imgs/img - Watering Hole.jpeg" alt="" id="img-mobile"></div>
                 <div class="mobile">
                     <h2>Tipos de ataque</h2>
                 </div>
@@ -159,8 +193,31 @@
                         <h2>Tipos de ataque</h2>
                     </div>
                     <div class="text-conteudo">
-                        <p> <Strong>- Scareware:</Strong>
-                            Usa táticas de medo, como alertas falsos de segurança, para obter informações ou downloads de malware.<br>
+                        <p>
+                            <Strong>- Quid pro quo:</Strong>
+                            Promete benefícios em troca de informações confidenciais, como ligações oferecendo descontos
+                            falsos.<br>
+                            <Strong>- Tailgating:</Strong>
+                            Acesso não autorizado seguindo uma pessoa autorizada para áreas restritas.<br>
+                            <Strong>- Scareware:</Strong>
+                            Usa táticas de medo, como alertas falsos de segurança, para obter informações ou downloads
+                            de malware.<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="img"><img src="imgs/engenharia-social.png" alt="" id="img-pc"><img
+                        src="imgs/img-Scareware.jpg" alt="" id="img-mobile"></div>
+                <div class="mobile">
+                    <h2>Tipos de ataque</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="text-titulo">
+                        <h2>Tipos de ataque</h2>
+                    </div>
+                    <div class="text-conteudo">
+                        <p>
                             <Strong>- Pretexting:</Strong>
                             Cria histórias fictícias para obter informações confidenciais.<br>
                             <Strong>- DNS Spoofing e Cache Poisoning:</Strong>
@@ -170,9 +227,9 @@
                         </p>
                     </div>
                 </div>
-                
-                <div class="img"><img src="imagens/img-Baiting.jpg" alt="" id="img-pc"><img src="imagens/img-Baiting.jpg" alt="" id="img-mobile"></div>
-                
+                <div class="img"><img src="imgs/icon-malware2.png" alt="" id="img-pc">
+                    <img src="imgs/img-Phishing-URL.png" alt="" id="img-mobile">
+                </div>
                 <div class="mobile">
                     <h2>Tipos de ataque</h2>
                 </div>
@@ -186,9 +243,8 @@
             </button>
         </main>
     </section>
-
     <section class="casos" id="casos">
-        <main class="carrosel"> 
+        <main class="carrosel">
             <button class="button" id="prev2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6">
@@ -196,20 +252,16 @@
                 </svg>
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75">
                 </path>
-                </svg>  
+                </svg>
             </button>
-
             <div class="container active">
                 <div class="content">
                     <div class="text-titulo">
                         <h2>Casos Reais</h2>
                     </div>
                     <div class="text-conteudo">
-                        <p> A engenharia social tem sido cada vez mais utilizada por hackers e golpistas para obter informações cruciais
-                            para roubo de cartões de créditos, contas bancarias e muitas outras aplicações;
-                            Em 2021 foi registrado um aumento de 165% nos golpes envolvendo engenharia social, e a cada dia que passa esse número aumenta graças
-                            a conscientização contra esse tipo de golpe e medidas de prevenção não são amplamente conhecidos, veja abaixo casos reais em que a engenharia 
-                            social foi aplicada:<br><br>
+                        
+                        <p>
                             <strong> Shark Tank, 2020</strong>
                             Em 2020, Barbara Corcoran, uma das juízas do programa de televisão "Shark Tank", foi vítima de um golpe de phishing e engenharia social.
                             Um cibercriminoso se passou por sua assistente e enviou um e-mail ao contador, solicitando o pagamento de uma renovação relacionada a investimentos 
@@ -222,32 +274,24 @@
                         </p>
                     </div>
                 </div>
-                <div class="img"><img src="imagens/pessoas.png" alt="" id="img-pc"> 
-                    <img src="imagens/pessoas.png" alt="" id="img-mobile">
+                <div class="img"><img src="imgs/pessoas.png" alt="" id="img-pc">
+                    <img src="imgs/img-Tailgating.jpg" alt="" id="img-mobile">
                 </div>
                 <div class="mobile">
                     <h2>Casos Reais</h2>
                 </div>
             </div>
-
-
-
-
             <div class="container">
                 <div class="content">
                     <div class="text-titulo">
                         <h2>Casos Reais</h2>
                     </div>
                     <div class="text-conteudo">
-                        <p> <strong> Condado de Cabarrus, 2018</strong>
+                        <p>
+                            <strong> Condado de Cabarrus, 2018</strong>
                             No ano de 2018, o Condado de Cabarrus, nos Estados Unidos, enfrentou prejuízos de USD 1,7 milhão devido a um golpe de engenharia social e BEC. 
                             Hackers se passaram por fornecedores do condado por meio de e-mails maliciosos, solicitando que os pagamentos fossem feitos em uma nova conta bancária. 
                             Após a transferência do dinheiro, os golpistas desviaram os fundos para várias contas, apresentando documentação aparentemente legítima.<br><br>
-                            <strong> Ethereum Classic, 2017</strong>
-                            Em 2017, várias pessoas perderam milhares de dólares em criptomoedas após o site da Ethereum Classic ser hackeado. 
-                            Os criminosos usaram engenharia social para se passar pelo proprietário da Classic Ether Wallet, obtendo acesso ao registro de domínio e redirecionando 
-                            o domínio para um servidor próprio. Com isso, conseguiram roubar as criptomoedas Ethereum das vítimas, visualizando suas chaves privadas usadas em 
-                            transações.<br><br>
                             <strong> Partido Democrata, 2016</strong>
                             Durante a eleição presidencial dos Estados Unidos em 2016, ataques de spear phishing resultaram no vazamento de e-mails e informações do Partido Democrata.
                             Esses vazamentos podem ter influenciado o resultado da eleição, que culminou na vitória de Donald Trump sobre Hillary Clinton. Os hackers criaram um e-mail
@@ -256,14 +300,13 @@
                         </p>
                     </div>
                 </div>
-                <div class="img"><img src="./assets/imgs/phishing-lanca.png" alt="" id="img-pc"> 
-                    <img src="./assets/imgs/phishing-lanca.png" alt="" id="img-mobile">
+                <div class="img"><img src="imgs/img-smishing.jpg" alt="" id="img-pc">
+                    <img src="imgs/img-smishing2.webp" alt="" id="img-mobile">
                 </div>
                 <div class="mobile">
                     <h2>Casos Reais</h2>
                 </div>
             </div>
-
             <div class="container">
                 <div class="content">
                     <div class="text-titulo">
@@ -279,23 +322,16 @@
                             Após uma investigação, o FBI revelou que o cyber-ataque à Sony Pictures em 2014 foi realizado pelo governo da Coreia do Norte. 
                             Milhares de arquivos, incluindo acordos comerciais, documentos financeiros e informações de funcionários, foram roubados. 
                             A Sony Pictures foi alvo de ataques de spear phishing, nos quais os funcionários foram enganados por e-mails falsos que pareciam ser da Apple.<br><br>
-                            <strong> Target, 2013</strong>
-                            Em 2013, a Target sofreu um ataque no qual hackers obtiveram acesso a 40 milhões de registros de informações de pagamento de clientes. 
-                            Por meio de um e-mail de phishing, os criminosos instalaram malware em uma empresa parceira da Target, permitindo-lhes posteriormente acessar a rede da 
-                            segunda maior varejista de lojas de departamento dos Estados Unidos. Os hackers também instalaram outro malware no sistema da Target para copiar 
-                            informações de cartões de crédito e débito dos clientes. Esse incidente destaca a importância de ser cauteloso com empresas e parceiros que têm acesso
-                            à sua rede.<br><br>
                         </p>
                     </div>
                 </div>
-                <div class="img"><img src="./assets/imgs/engenharia-social.png" alt="" id="img-pc"> 
-                    <img src="./assets/imgs/engenharia-social.png" alt="" id="img-mobile">
+                <div class="img"><img src="imgs/img-Baiting.jpg" alt="" id="img-pc">
+                    <img src="imgs/img-Vishing.webp" alt="" id="img-mobile">
                 </div>
                 <div class="mobile">
                     <h2>Casos Reais</h2>
                 </div>
             </div>
-
             <button class="button" id="next2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6">
@@ -303,43 +339,70 @@
                         d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
                 </svg>
             </button>
-            
         </main>
     </section>
-    
 
     <section class="fontes" id="fontes">
         <main class="container">
-            <div class="text-titulo"><h1>Fontes</h1></div>
+            <div class="text-titulo">
+                <h1>Fontes</h1>
+            </div>
             <div class="content">
                 <ul class="icon-list">
-                        <li>Engenharia Social. Disponível em: <a href="https://encurtador.com.br/NsFJV">https://encurtador.com.br/NsFJV</a></li>
-                        <li>Tipos de ataques. Disponível em: <a href="https://encurtador.com.br/G9WvS">https://encurtador.com.br/G9WvS</a></li>
-                        <li>Casos Reais. Disponível em: <a href="https://encurtador.com.br/HfxoS">https://encurtador.com.br/HfxoS</a></li>
-                        <li>Como previr. Disponível em: <a href="https://cert.br">https://cert.br</a></li>
-                        <li>Icons. Dispoível em: <a href="https://www.flaticon.com/br/">https://www.flaticon.com/br/</a></li>
+                    <li>
+                        <p>
+                            <span class="icon"><i class="fas fa-lightbulb"></i></span>
+                            <p class="fonte-p">Engenharia Social. Disponível em:</p> <a href="https://encurtador.com.br/NsFJV"><p> https://encurtador.com.br/NsFJV</a></p>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="icon"><i class="fas fa-lightbulb"></i></span>
+                            <p class="fonte-p">Tipos de ataques. Disponível em:</p> <a href="https://encurtador.com.br/G9WvS"> <p>https://encurtador.com.br/G9WvS</a></p>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="icon"><i class="fas fa-lightbulb"></i></span>
+                            <p class="fonte-p">Casos Reais. Disponível em: </p><a href="https://encurtador.com.br/HfxoS"> <p>https://encurtador.com.br/HfxoS</a></p>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="icon"><i class="fas fa-lightbulb"></i></span>
+                            <p class="fonte-p">Como previr. Disponível em:</p> <a href="https://cert.br"> <p>https://cert.br</a></p>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="icon"><i class="fas fa-lightbulb"></i></span>
+                                                 <p class="fonte-p">Icons. Dispoível em:</p> <a href="https://www.flaticon.com/br/"> <p>https://www.flaticon.com/br/</a></p>
+                        </p>
+                    </li>
                 </ul>
             </div>
         </main>
     </section>
+    <!-- fim italo -->
 
-
+    <!-- rodape -->
     <div class="container-subir" id="container-subir">
         <a href="#top">
-            <img src="./assets/imgs/seta-para-subir-ao-topo.png" alt="" class="subir" id="subir">
+            <img src="imgs/seta-para-subir-ao-topo.png" alt="" class="subir" id="subir">
         </a>
     </div>
+
     <footer class="footer" id="footer"> <!-- footer -->
         <a href="https://inscricao.prozeducacao.com.br/" class="proz-link">
-            <img src="./assets/imgs/logo-PROZ.png" alt="" class="proz-logo" id="proz-logo">
+            <img src="imgs/logo-PROZ.png" alt="" class="proz-logo" id="proz-logo">
         </a>
 
         <p class="autoria" id="autoria">Turma Desenvolvimento<wbr> de Sistemas<wbr> Proz 2024</p>
     </footer>
+    <!-- fim rodape -->
 
-    <script src="./assets/js/home.js" defer></script>
-    <script src="./assets/js/main.js" defer></script>
-
+    <script src="js/home.js" defer></script>
+    <script src="js/main.js" defer></script>
 </body>
 
 </html>

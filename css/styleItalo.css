@@ -1,63 +1,18 @@
-/* section {
-  height: 100vh;
+
+section {
+  height: auto;
+  min-height: 100vh;
   width: 100%;
   margin: 0;
   padding: 0;
-} */
-
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
-
-.icon {
-  flex: 1;
-  min-width: 250px; /* ajuste conforme necessário */
-  margin: 10px;
-  text-align: center;
-}
-
-.icon .image {
-  width: 100px; /* Defina a largura desejada */
-  height: 100px; /* Defina a altura desejada */
-  object-fit: cover; /* Isso garante que a imagem mantenha suas proporções */
-  margin: 0 auto; /* Centraliza a imagem horizontalmente */
-}
-
-.icon p {
-  margin-top: 10px; /* Espaço entre a imagem e o texto */
-  text-align: left; /* Alinha o texto à esquerda */
-}
-
-
-p{
-  text-align: justify;
-}
-
-.text-conteudo p {
-  line-height: 1.8; 
-  text-align: justify;
-} 
-
 
 /* secao 1 */
 .tipos {
   background-color: #1B1A55;
-  width: 100vw;
-  padding: 10px;
-}
-
-.tipos .container {
-  display: none; /* Oculta todos os contêineres por padrão */
-  opacity: 0; /* Garante que os contêineres ocultos não ocupem espaço */
-  transition: opacity 0.5s ease; /* Transição suave de opacidade */
-}
-
-.tipos .container.active {
-  display: flex; /* Mostra o contêiner ativo */
-  opacity: 1; /* Torna o contêiner visível */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* inico carrosel */
@@ -66,7 +21,6 @@ p{
   width: 100%;
   height: 100%;
   justify-content: center;
-  justify-content: space-around;
   align-items: center;
   gap: 10px;
 
@@ -76,15 +30,14 @@ p{
   display: none;
 }
 
-.tipos .carrosel .container.active{/* desktop*/
-  background-color: var(--lilas);
+.tipos .carrosel .container.active {
+  background-color: #9290C3;
   padding: 10px;
-  height: 55%;
-  width: 73%;
+  height: 60%;
+  width: 75%;
   border-radius: 20px;
   display: flex;
-  flex-direction: row;
-  margin-top: 20px;
+  
 }
 
 .tipos .container.active .content {
@@ -92,9 +45,12 @@ p{
   border-radius: 20px;
   display: inline-block;
   justify-content: center;
-  align-items: top;
+  align-items: center;
   height: auto;
   width: 60%;
+  margin: 1%;
+  min-height: 50vh;
+  
 }
 
 .tipos .container.active .content .text-titulo {
@@ -102,6 +58,7 @@ p{
   justify-content: center;
   display: flex;
   margin: 1vh;
+
 }
 
 .tipos .container.active .content .text-titulo h2 {
@@ -114,20 +71,20 @@ p{
 }
 
 .tipos .container.active .content .text-conteudo {
-  display: inline-block;
+  display: flex;
   justify-content: center;
-  padding: 2vh;
+  align-items: center;
+  padding: 2rem;
+  flex-direction: column;
+  margin-top: 10%;
 
 }
 
 .tipos .container.active .content .text-conteudo p {
   font-size: large;
+  line-height: 3;
 }
 
-.tipos .container.active .content .text-conteudo h3 {
-  font-size: large;
-  font-weight: bolder;
-}
 
 
 .tipos .container.active .img {
@@ -181,8 +138,10 @@ p{
 /* secao 2 */
 
 .casos {
-  background-color: hsl(241, 53%, 22%);
-
+  background-color: #1B1A55;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* inico carrosel */
@@ -192,7 +151,8 @@ p{
   height: 100%;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  gap: 10px;
+
 }
 
 .casos .carrosel .container {
@@ -200,13 +160,12 @@ p{
 }
 
 .casos .carrosel .container.active {
-  background-color: var(--lilas);
+  background-color: #9290C3;
   padding: 10px;
-  height: 55%;
+  height: 60%;
   width: 75%;
   border-radius: 20px;
   display: flex;
-  grid-template-columns: 2fr 1fr;
   flex-direction: row-reverse;
 }
 
@@ -215,9 +174,11 @@ p{
   border-radius: 20px;
   display: inline-block;
   justify-content: center;
-  align-items: top;
+  align-items: center;
   height: auto;
   width: 60%;
+  margin: 1%;
+  min-height: 50vh;
 }
 
 .casos .container.active .mobile {
@@ -237,18 +198,23 @@ p{
 }
 
 .casos .container.active .content .text-conteudo {
-  display: inline-block;
+  display: flex;
   justify-content: center;
-  padding: 2vh;
+  align-items: center;
+  padding: 2rem;
+  flex-direction: column;
+  margin-top: 10%;
 }
 
 .casos .container.active .content .text-conteudo p {
   font-size: large;
+  line-height: 1;
 }
 
 .casos .container.active .content .text-conteudo h3 {
   font-size: large;
   font-weight: bolder;
+  padding: 1em 0;
 }
 
 
@@ -301,10 +267,9 @@ p{
 @media (min-width: 899px) and (max-width: 1250px) {
 
   .tipos .carrosel .container.active {
-    background-color: var(--lilas);
-    height: 55%;
-    margin-bottom: 5em;
-    width: 80%;
+
+    height: auto;
+    width: 75%;
    
   }
 
@@ -325,6 +290,11 @@ p{
     display: inline-block;
     justify-content: center;
     padding: 0 2vh;
+  }
+
+  .tipos .container.active .content .text-conteudo p {
+    font-size: large;
+    line-height: 2;
   }
 
   .tipos .container.active .img img{
@@ -370,17 +340,25 @@ p{
 
 }
 
-@media screen and (max-width: 899px) {
-  #italo .container.active {
-    background-color: var(--lilas);
-    height: 24em;
+@media (max-width: 899px) {
+
+  section {
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    margin:  0;
+    padding:3em 0;
+  }
+
+  .tipos .container.active {
+    height: auto;
     width: 90%;
     display: flex;
     flex-direction: column-reverse;
-    overflow-y: scroll;
+
   }
 
-  #italo .container.active .img {
+  .tipos .container.active .img {
     background-color: #070F2B;
     border-radius: 20px;
     min-height: 15em;
@@ -390,11 +368,28 @@ p{
   .tipos .container.active .content {
     background-color: #9290C3;
     border-radius: 20px;
-    display: inline-block;
+    display: flex;
     justify-content: center;
-    align-items: top;
+    align-items: center;
     height: auto;
     width: 100%;
+    min-height: 0;
+  }
+
+  .tipos .container.active .content .text-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 9%;
+
+  
+  }
+
+  .tipos .container.active .content .text-conteudo p {
+    font-size: large;
+    line-height: 1;
   }
 
   .tipos .container.active .content .text-titulo {
@@ -422,14 +417,45 @@ p{
     max-height: 300px;
   }
 
+
+
+  .casos .container.active {
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+
+  } 
+   .casos .carrosel .container.active {
+    flex-direction: column-reverse;
+  }
+
+  .casos .container.active .img {
+    background-color: #070F2B;
+    border-radius: 20px;
+    min-height: 15em;
+    width: auto;
+  }
+
   .casos .container.active .content {
     background-color: #9290C3;
     border-radius: 20px;
-    display: inline-block;
+    display: flex;
     justify-content: center;
     align-items: top;
     height: auto;
     width: 100%;
+    min-height: 0;
+  }
+
+  .casos .container.active .content .text-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column;
+    margin: 1%;
+  
   }
 
   .casos .container.active .content .text-titulo {
@@ -461,6 +487,13 @@ p{
 
 .fontes {
   background-color: #9290C3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 80vh;
+  height: auto;
+  width: 100%;
 }
 
 .fontes .container {
@@ -474,8 +507,8 @@ p{
   align-items: center;
   justify-content: center;
   display: flex;
-  margin: 3vh;
-  padding-top: 5em;
+  margin: 1vh;
+
 }
 
 .fontes .container .text-titulo h1 {
@@ -486,6 +519,9 @@ p{
 .fontes .container .content {
   margin: 10px;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fontes .container .content .icon-list {
@@ -496,14 +532,72 @@ p{
 .fontes .container .content .icon-list li {
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  margin: 2em 0;
 }
 
 .fontes .container .content .icon-list li p {
   font-size: large;
+  padding-left: 10px;
 }
+
 
 .fontes .container .content .icon-list .icon {
   margin-right: 10px;
   color: yellow;
+  gap: 5px;
+}
+@media (max-width: 699px) {
+
+  .fontes{
+    height: auto;
+    min-height: auto;
+  }
+
+  .fontes .container .text-titulo {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 1vh;
+  
+  }
+  
+  .fontes .container .text-titulo h1 {
+    font-size: xx-large;
+    font-weight: bolder;
+  }
+  
+  .fontes .container .content {
+    margin: 1px;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .fontes .container .content .icon-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .fontes .container .content .icon-list li {
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+  }
+  .fontes .container .content .icon-list li .fonte-p{
+    display: none;
+  }
+
+
+  .fontes .container .content .icon-list li p {
+    font-size: medium;
+    padding-left: 1px;
+  }
+
+
+  .fontes .container .content .icon-list .icon {
+    margin-right: 2px;
+    gap: 1px;
+  }
 }
