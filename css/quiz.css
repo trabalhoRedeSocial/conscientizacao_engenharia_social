@@ -21,3 +21,8 @@
 .quiz-titulo{
     font-size: 3em;
 }
+.quiz-descricao{
+    max-width: 80vw;
+    font-size: 1.1em;
+    text-align: center;
+}

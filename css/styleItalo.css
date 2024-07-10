@@ -13,10 +13,13 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-content: space-around;
+
 }
 
 /* inico carrosel */
 .tipos .carrosel {
+  transform: scale(0.8);
   display: flex;
   width: 100%;
   height: 100%;
@@ -31,6 +34,7 @@ section {
 }
 
 .tipos .carrosel .container.active {
+  transform: scale(0.9);
   background-color: #9290C3;
   padding: 10px;
   height: 60%;
@@ -146,6 +150,7 @@ section {
 
 /* inico carrosel */
 .casos .carrosel {
+  transform: scale(0.8);
   display: flex;
   width: 100%;
   height: 100%;
@@ -160,6 +165,7 @@ section {
 }
 
 .casos .carrosel .container.active {
+  transform: scale(0.9);
   background-color: #9290C3;
   padding: 10px;
   height: 60%;

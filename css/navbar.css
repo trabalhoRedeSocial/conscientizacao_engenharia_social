@@ -22,7 +22,7 @@ ultima mudança realizada: estilização das pseudo-classes
     align-items: center;
     position: fixed;
     transition: all 0.3s;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out
 }
 
 .header .hamburger-icon {
